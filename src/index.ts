@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { ChecklistDirective } from './checklist';
+import { ChecklistDirective } from './directives/checklist.directive';
 
 
 @NgModule({

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, EventEmitter, Input, OnChanges, Output } from '@angular/core';
+import { Directive, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 
 
 @Directive({
@@ -20,10 +20,6 @@ export class ChecklistDirective implements OnChanges {
   isChecked: boolean;
 
   ////////////
-
-  constructor(
-    private el: ElementRef,
-  ) { }
 
   ngOnChanges() {
     this.isChecked = this.checklist.indexOf(this.checklistValue) >= 0;
