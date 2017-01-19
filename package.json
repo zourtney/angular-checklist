@@ -114,5 +114,5 @@
     "test": "npm test"
   },
   "typings": "index.d.ts",
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
