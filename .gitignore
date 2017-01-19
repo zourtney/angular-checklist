@@ -1,3 +1,13 @@
 /node_modules
 /.DS_Store
 /src/.DS_Store
+/dist
+/index.d.ts
+/index.js
+/index.metadata.json
+/src/directives/checklist.directive.d.ts
+/src/directives/checklist.directive.js
+/src/directives/checklist.directive.metadata.json
+/src/index.d.ts
+/src/index.js
+/src/index.metadata.json
