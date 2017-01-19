@@ -1,7 +1,7 @@
 {
-  "name": "angular2-checklist",
+  "name": "angular-checklist",
   "version": "1.0.0",
-  "description": "One-way bound input[type=\"checkbox\"] directive for Angular 2",
+  "description": "One-way and two-way bound checkbox list directive for Angular 2+",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",

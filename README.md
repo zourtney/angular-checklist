@@ -1,3 +1,34 @@
+Simple Angular 2 directive to bind multiple `input[type="checkbox"]` inputs to
+a single output array.
+
+Inspired by the Vitalets
+[checklist-model](https://vitalets.github.io/checklist-model/) for Angular 1.
+
+```ts
+@Component({
+  selector: 'demo',
+  template: `
+    <label>
+      <input type="checkbox"
+             [(checklist)]="list"
+             [checklistValue]="1" />
+      One
+    </label>
+
+    <label>
+      <input type="checkbox"
+             [(checklist)]="list"
+             [checklistValue]="2" />
+      Two
+    </label>
+  `,
+})
+export class DemoComponent {
+  list = [2];  // will auto-check pre-populated values
+}
+```
+
+
 Installation
 ============
 
