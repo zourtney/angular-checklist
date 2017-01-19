@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "mapRoot": "./",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "outDir": "./dist/",
+    "rootDir": ".",
+    "sourceMap": true,
+    "target": "es6",
+    "inlineSources": true
+  },
+  "files": [
+    "./src/index.ts",
+    "./demo/main.ts"
+  ]
+}
