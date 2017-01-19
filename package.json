@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "test": "npm test"
   },
-  "author": "",
+  "author": "zourtney@gmail.com",
   "license": "MIT",
   "dependencies": {
     "@angular/common": "^2.4.3",
@@ -26,5 +26,20 @@
     "typescript": "^2.1.5",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zourtney/angular-checklist.git"
+  },
+  "keywords": [
+    "angular2",
+    "ng2",
+    "checklist",
+    "checkbox",
+    "checklist-model"
+  ],
+  "bugs": {
+    "url": "https://github.com/zourtney/angular-checklist/issues"
+  },
+  "homepage": "https://github.com/zourtney/angular-checklist#readme"
 }
