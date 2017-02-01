@@ -3,7 +3,7 @@
 
 *2017-01-18*
 
-Initial commit.
+Initial commit
 
 
 1.0.1
@@ -18,4 +18,14 @@ Initial commit.
 1.0.2
 -----
 
-- Compile with `ngc` on NPM `prepublish` hook.
+*2017-01-19*
+
+- Compile with `ngc` on NPM `prepublish` hook
+
+
+1.1.0
+-----
+
+*2017-01-31*
+
+- **BREAKING CHANGE:** renamed module to `ChecklistModule`
