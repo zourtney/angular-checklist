@@ -13,3 +13,9 @@ Initial commit.
 
 - Fixed module exposure (using `ngc`)
 - Removed unnecessary `ElementRef` inclusion
+
+
+1.0.2
+-----
+
+- Compile with `ngc` on NPM `prepublish` hook.

@@ -1,8 +1,13 @@
-Simple Angular 2 directive to bind multiple `input[type="checkbox"]` inputs to
-a single output array.
+# angular-checklist
 
-Inspired by the Vitalets
-[checklist-model](https://vitalets.github.io/checklist-model/) for Angular 1.
+A simple Angular 2 directive to bind multiple `input[type="checkbox"]` controls
+to a single output array.
+
+
+```html
+<input type="checkbox" [checklist]="myArray" checklistValue="myVal1" />
+```
+
 
 ```ts
 @Component({
@@ -29,8 +34,7 @@ export class DemoComponent {
 ```
 
 
-Installation
-============
+## Installation
 
 Install via NPM:
 
@@ -40,8 +44,7 @@ npm install --save angular-checklist
 
 
 
-Add to module `imports`
-=======================
+## Add to module `imports`
 
 Import the dependency, then add to your `NgModule`'s `imports` array.
 
@@ -59,15 +62,13 @@ export class AppModule { }
 
 
 
-Use it!
-=======
+## Use it in your template
 
 Designed to effortlessly work with both one- and two-way binding syntaxes means
 `angular-checklist` is **immutable friendly**.
 
 
-Two-way binding
----------------
+#### Two-way binding
 
 For standard forms, simply use Angular's two-way binding ("box of bananas")
 syntax. This will update your `list` after every change.
@@ -79,8 +80,7 @@ syntax. This will update your `list` after every change.
 ```
 
 
-One-way binding
----------------
+#### One-way binding
 
 For finer control, use one-way binding syntax. `$event` will contain an
 updated, shallow copy of `list`.
@@ -93,8 +93,7 @@ updated, shallow copy of `list`.
 ```
 
 
-Looping and Object binding
---------------------------
+#### Looping and Object binding
 
 `angular-checklist` works great with `*ngFor`. Remember to use brackets `[]` to
 bind non-string `checklistValue`s.
@@ -107,3 +106,9 @@ bind non-string `checklistValue`s.
   {{opt.text}}
 </label>
 ```
+
+
+## Credits
+
+- Inspired by the Vitalets [checklist-model](https://vitalets.github.io/checklist-model/) for Angular 1.
+- A few core ideas taken from [ng2-checklist](https://github.com/amaanm/ng2-checklist)
