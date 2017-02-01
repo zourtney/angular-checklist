@@ -49,12 +49,12 @@ npm install --save angular-checklist
 Import the dependency, then add to your `NgModule`'s `imports` array.
 
 ```ts
-import { AngularChecklistModule } from 'angular-checklist';
+import { ChecklistModule } from 'angular-checklist';
 
 @NgModule({
   imports: [
     /* others */
-    AngularChecklistModule,
+    ChecklistModule,
   ],
 })
 export class AppModule { }

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { RouterModule } from '@angular/router';
 
-import { AngularChecklistModule } from '../src/index';
+import { ChecklistModule } from '../src/index';
 import { AppComponent } from './app.component';
 import { GettingStartedComponent } from './getting-started.component';
 import { LoopingComponent } from './looping.component';
@@ -37,7 +37,7 @@ const appRoutes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    AngularChecklistModule,
+    ChecklistModule,
   ],
 })
 class AppModule { }
