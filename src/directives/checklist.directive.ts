@@ -9,14 +9,9 @@ import { Directive, EventEmitter, Input, OnChanges, Output } from '@angular/core
   selector: '[checklist]',
 })
 export class ChecklistDirective implements OnChanges {
-  // In
   @Input() checklist: any[];
   @Input() checklistValue: any;
-
-  // Out
   @Output() checklistChange = new EventEmitter <any[]> ();
-
-  // Local
   isChecked: boolean;
 
   ////////////
@@ -25,17 +20,16 @@ export class ChecklistDirective implements OnChanges {
     this.isChecked = this.checklist.indexOf(this.checklistValue) >= 0;
   }
 
-  triggerOnChange($event) {
-    const list = this.checklist;
-    const val = this.checklistValue;
+  triggerOnChange($event: Event) {
+    const target = $event.target as HTMLInputElement;
     let updatedList;
 
-    if ($event.target.checked) {
-      updatedList = [...list, val];
+    if (target && target.checked) {
+      updatedList = [...this.checklist, this.checklistValue];
     }
     else {
-      const i = this.checklist.indexOf(val);
-      updatedList = [...list.slice(0, i), ...list.slice(i + 1)];
+      const i = this.checklist.indexOf(this.checklistValue);
+      updatedList = [...this.checklist.slice(0, i), ...this.checklist.slice(i + 1)];
     }
 
     this.checklistChange.emit(updatedList);

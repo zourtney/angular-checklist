@@ -15,4 +15,4 @@ import { ChecklistDirective } from './directives/checklist.directive';
     CommonModule,
   ],
 })
-export class AngularChecklistModule { }
+export class ChecklistModule { }

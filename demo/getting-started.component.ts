@@ -21,12 +21,12 @@ import { Component } from '@angular/core';
     <h2>Add to module <code>imports</code></h2>
     <p>Import the dependency, then add to your <code>NgModule</code>'s <code>imports</code> array.</p>
     <div class="code">
-      import {{'{'}} AngularChecklistModule {{'}'}} from 'angular-checklist';<br/>
+      import {{'{'}} ChecklistModule {{'}'}} from 'angular-checklist';<br/>
       <br/>
       @NgModule({{'{'}}<br/>
       &nbsp;&nbsp;imports: [<br>
       &nbsp;&nbsp;&nbsp;&nbsp;/* others */<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;AngularChecklistModule,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;ChecklistModule,<br/>
       &nbsp;&nbsp;],<br/>
       {{'}'}})<br/>
       export class AppModule {{'{ }'}}
