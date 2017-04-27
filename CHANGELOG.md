@@ -29,3 +29,11 @@ Initial commit
 *2017-01-31*
 
 - **BREAKING CHANGE:** renamed module to `ChecklistModule`
+
+
+1.2.0
+-----
+
+*2017-04-27*
+
+- Updated depedencies. Now requires Angular 4.0+.
