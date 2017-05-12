@@ -69,6 +69,7 @@
     "@types/node": "^7.0.0",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.9",
+    "rimraf": "^2.6.1",
     "rxjs": "^5.1.0",
     "ts-loader": "^2.0.3",
     "tslint": "^4.3.1",
@@ -103,13 +104,15 @@
   "readme": "ERROR: No README data found!",
   "repository": "git+https://github.com/zourtney/angular-checklist.git",
   "scripts": {
-    "build": "ngc -p tsconfig.json",
+    "build": "ngc",
+    "clean": "rimraf ./dist ./src/**.js ./src/**.json",
     "lint": "tslint ./**/*.ts",
-    "prepublish": "npm run lint && npm run build",
+    "prepublish": "npm run clean && npm run lint && npm run build",
     "start": "webpack-dev-server",
     "test": "npm test"
   },
-  "typings": "index.d.ts",
+  "types": "dist/index.d.ts",
   "version": "1.2.0",
-  "main": "index.js"
+  "main": "dist/index.js",
+  "module": "dist/index.js"
 }

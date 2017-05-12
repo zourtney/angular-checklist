@@ -3,30 +3,20 @@
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "lib": ["es2015", "dom"],
+    "module": "es2015",
     "moduleResolution": "node",
-    "noEmitHelpers": false,
-    "noImplicitAny": false,
-    "rootDir": ".",
-    "skipLibCheck": true,
-    "sourceMap": false,
-    "stripInternal": true,
-    "target": "es5",
-    "lib": ["es6", "dom"],
-    "types": [
-      "node"
-    ]
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es5"
   },
-  "include": [
-    "./src/**/*.ts"
-  ],
   "files": [
-    "./index.ts"
+    "./src/index.ts"
   ],
   "exclude": [
     "node_modules"
   ],
   "angularCompilerOptions": {
-    "genDir": "dist",
-    "skipMetadataEmit": false
+    "skipTemplateCodegen": true
   }
 }
