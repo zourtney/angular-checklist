@@ -37,3 +37,11 @@ Initial commit
 *2017-04-27*
 
 - Updated depedencies. Now requires Angular 4.0+.
+
+
+1.2.1
+-----
+
+*2017-05-11*
+
+- Properly include JS files and exclude TS files on build. See #1.
