@@ -57,7 +57,7 @@ import { Component } from '@angular/core';
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox"<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(checklist)]="list"<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[checklistValue]="first.value" /&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[checklistValue]="first" /&gt;<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123;&#123;first.text&#125;&#125;<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br/>
       <br/>
@@ -74,7 +74,7 @@ import { Component } from '@angular/core';
       <label>
         <input type="checkbox"
                [(checklist)]="list2"
-               [checklistValue]="first.value" />
+               [checklistValue]="first" />
         {{first.text}}
       </label>
 
@@ -94,7 +94,8 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="output">
-      {{list2 | json}}
+    Default selected value : 
+      {{list2 | json}} 
     <div>
   `,
 })
@@ -104,5 +105,5 @@ export class ObjectComponent {
   first = { text: 'One', value: 1 };
   second = { text: 'Two', value: 2 };
   third = { text: 'Three', value: 3 };
-  list2 = [];
+  list2 = [{ text: 'One', value: 1 }];
 }

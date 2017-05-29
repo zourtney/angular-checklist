@@ -106,7 +106,8 @@ bind non-string `checklistValue`s.
   {{opt.text}}
 </label>
 ```
-
+## Note
+- Added support of Object as checklistValue, so you can pass object to checklistValue.
 
 ## Credits
 
