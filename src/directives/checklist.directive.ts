@@ -26,12 +26,10 @@ export class ChecklistDirective implements OnChanges {
     });
   }
   ngOnChanges() {
-    if (this.checklist.length > 0) {
-      if (typeof this.checklistValue === "object") {
-        this.isChecked = this.contains(this.checklistValue);
-      } else {
-        this.isChecked = this.checklist.indexOf(this.checklistValue) >= 0;
-      }
+    if (typeof this.checklistValue === "object") {
+      this.isChecked = this.contains(this.checklistValue);
+    } else {
+      this.isChecked = this.checklist.indexOf(this.checklistValue) >= 0;
     }
   }
 
