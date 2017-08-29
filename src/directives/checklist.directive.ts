@@ -17,7 +17,8 @@ export class ChecklistDirective implements OnChanges {
   ////////////
 
   ngOnChanges() {
-    this.isChecked = this.checklist.indexOf(this.checklistValue) >= 0;
+    const checklist = this.checklist || [];
+    this.isChecked = checklist.indexOf(this.checklistValue) >= 0;
   }
 
   triggerOnChange($event: Event) {
