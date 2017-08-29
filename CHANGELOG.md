@@ -45,3 +45,19 @@ Initial commit
 *2017-05-11*
 
 - Properly include JS files and exclude TS files on build. See #1.
+
+
+1.2.2
+-----
+
+*2017-05-20*
+
+- use `commonjs` module output
+
+
+1.2.3
+-----
+
+*2017-08-29*
+
+- Null-safe check for internal `isChecked` flag
