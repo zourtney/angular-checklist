@@ -27,7 +27,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="output">
-      {{list | json}}
+      list = {{list | json}}
     </div>
   `,
 })

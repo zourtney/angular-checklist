@@ -47,7 +47,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="output">
-      {{list | json}}
+      list = {{list | json}}
     </div>
 
 
@@ -94,7 +94,7 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="output">
-      {{list2 | json}}
+      list2 = {{list2 | json}}
     <div>
   `,
 })

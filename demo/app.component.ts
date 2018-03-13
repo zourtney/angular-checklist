@@ -83,6 +83,23 @@ import { Component, ViewEncapsulation } from '@angular/core';
       letter-spacing: .15em;
       font-size: .67em;
     }
+    .compatibility {
+      position: relative;
+      margin: 20px 0;
+      padding: 20px 100px 20px 20px;
+      background: #eee;
+      border: 1px solid #ccc;
+    }
+    .compatibility-version {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #333;
+      color: white;
+      padding: 14px 10px;
+      font-family: monospace;
+      font-size: 2em;
+    }
   `],
   template: `
     <nav>
