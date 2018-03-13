@@ -61,3 +61,10 @@ Initial commit
 *2017-08-29*
 
 - Null-safe check for internal `isChecked` flag
+
+
+1.3.0
+-----
+
+- Allow falsy input (Pull #5)
+- `maxSelectedItems` (Pull #6)
