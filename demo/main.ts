@@ -7,6 +7,7 @@ import { ChecklistModule } from '../src/index';
 import { AppComponent } from './app.component';
 import { GettingStartedComponent } from './getting-started.component';
 import { LoopingComponent } from './looping.component';
+import { MaxSelectionComponent } from './max-selection.component';
 import { ObjectComponent } from './object-binding.component';
 import { OneWayComponent } from './one-way.component';
 import { TwoWayComponent } from './two-way.component';
@@ -18,6 +19,7 @@ const appRoutes = [
   { path: 'objects', component: ObjectComponent },
   { path: 'one-way', component: OneWayComponent },
   { path: 'two-way', component: TwoWayComponent },
+  { path: 'max-selection', component: MaxSelectionComponent },
   { path: '**', component: GettingStartedComponent },
 ];
 
@@ -33,6 +35,7 @@ const appRoutes = [
     ObjectComponent,
     OneWayComponent,
     TwoWayComponent,
+    MaxSelectionComponent,
   ],
   imports: [
     BrowserModule,

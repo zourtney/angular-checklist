@@ -108,6 +108,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
       <a routerLink="/one-way" routerLinkActive="active">One-Way Binding</a>
       <a routerLink="/objects" routerLinkActive="active">Object Binding</a>
       <a routerLink="/looping" routerLinkActive="active">Looping</a>
+      <a routerLink="/max-selection" routerLinkActive="active">Max Selection</a>
     </nav>
     <div class="app-content">
       <router-outlet></router-outlet>

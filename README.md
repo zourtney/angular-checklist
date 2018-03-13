@@ -98,11 +98,28 @@ updated, shallow copy of `list`.
 `angular-checklist` works great with `*ngFor`. Remember to use brackets `[]` to
 bind non-string `checklistValue`s.
 
-```ts
+```html
 <label *ngFor="let opt of options">
   <input type="checkbox"
          [(checklist)]="list"
          [checklistValue]="opt.value" />
+  {{opt.text}}
+</label>
+```
+
+
+#### Limited selected items
+
+You can limit the number of possibly selectable items by using the `maxSelectedItems` input. Default is `-1`, which mean no limit.
+
+Note: this simply prevents futher changes, it does not unselect old value(s).
+
+```html
+<label *ngFor="let opt of options">
+  <input type="checkbox"
+         [(checklist)]="list"
+         [checklistValue]="opt.value"
+         [maxSelectedItems]="2" />
   {{opt.text}}
 </label>
 ```
