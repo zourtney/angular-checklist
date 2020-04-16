@@ -1,0 +1,28 @@
+<p>
+  Use bracket <code>[]</code> syntax to bind to <code>*ngFor</code> variables.
+</p>
+
+<div class="code" ngNonBindable>
+  &lt;label *ngFor="let opt of options"&gt;<br/>
+  &nbsp;&nbsp;&lt;input type="checkbox"<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(checklist)]="list"<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[checklistValue]="opt.value" /&gt;<br/>
+  &nbsp;&nbsp;{{opt.text}}<br/>
+  &lt;/label&gt;
+  <br/>
+  <br/>
+  ...
+</div>
+
+<div class="demo">
+  <label *ngFor="let opt of options">
+    <input type="checkbox"
+           [(checklist)]="list"
+           [checklistValue]="opt.value" />
+    {{opt.text}}
+  </label>
+</div>
+
+<div class="output">
+  list = {{list | json}}
+</div>

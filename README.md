@@ -1,6 +1,6 @@
 # angular-checklist
 
-A simple Angular 2 directive to bind multiple `input[type="checkbox"]` controls
+A simple Angular directive to bind multiple `input[type="checkbox"]` controls
 to a single output array.
 
 
@@ -40,6 +40,12 @@ Install via NPM:
 
 ```
 npm install --save angular-checklist
+```
+
+Or via Yarn:
+
+```
+yarn add angular-checklist
 ```
 
 
@@ -112,7 +118,7 @@ bind non-string `checklistValue`s.
 
 You can limit the number of possibly selectable items by using the `maxSelectedItems` input. Default is `-1`, which mean no limit.
 
-Note: this simply prevents futher changes, it does not unselect old value(s).
+Note: this simply prevents further changes, it does not unselect old value(s).
 
 ```html
 <label *ngFor="let opt of options">
