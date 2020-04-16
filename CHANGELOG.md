@@ -70,7 +70,7 @@ Initial commit
 - `maxSelectedItems` (Pull #6)
 
 
-9.1.1-dev
----------
+1.4.0
+-----
 
 - Rebuild for Angular Ivy compatibility

@@ -1,6 +1,6 @@
 {
   "name": "angular-checklist",
-  "version": "9.1.1-dev",
+  "version": "1.4.0-dev",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --project demo",
