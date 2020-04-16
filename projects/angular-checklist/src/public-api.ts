@@ -3,4 +3,4 @@
  */
 
 export * from './lib/checklist.directive';
-export * from './lib/angular-checklist.module';
+export * from './lib/checklist.module';

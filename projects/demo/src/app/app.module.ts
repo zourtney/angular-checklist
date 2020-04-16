@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularChecklistModule } from 'angular-checklist';
+import { ChecklistModule } from 'angular-checklist';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +24,7 @@ import { MaxSelectionComponent } from './max-selection/max-selection.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularChecklistModule,
+    ChecklistModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
