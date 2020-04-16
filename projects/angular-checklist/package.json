@@ -1,6 +1,6 @@
 {
   "name": "angular-checklist",
-  "version": "1.4.0-dev",
+  "version": "1.4.1-dev",
   "peerDependencies": {
     "@angular/common": "^9.1.1",
     "@angular/core": "^9.1.1",
