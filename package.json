@@ -1,118 +1,49 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "angular-checklist@^1.0.0",
-        "scope": null,
-        "escapedName": "angular-checklist",
-        "name": "angular-checklist",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/Users/zourtney/Development/controlpanel-client"
-    ]
-  ],
-  "_from": "angular-checklist@>=1.0.0 <2.0.0",
-  "_id": "angular-checklist@1.0.0",
-  "_inCache": true,
-  "_location": "/angular-checklist",
-  "_nodeVersion": "6.9.1",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/angular-checklist-1.0.0.tgz_1484815588223_0.7578090527094901"
-  },
-  "_npmUser": {
-    "name": "zourtney",
-    "email": "zourtney@gmail.com"
-  },
-  "_npmVersion": "3.10.8",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "angular-checklist@^1.0.0",
-    "scope": null,
-    "escapedName": "angular-checklist",
-    "name": "angular-checklist",
-    "rawSpec": "^1.0.0",
-    "spec": ">=1.0.0 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/angular-checklist/-/angular-checklist-1.0.0.tgz",
-  "_shasum": "10ed027f19d2bd332a0f3003cffed1badc25d5ec",
-  "_shrinkwrap": null,
-  "_spec": "angular-checklist@^1.0.0",
-  "_where": "/Users/zourtney/Development/controlpanel-client",
-  "author": "zourtney@gmail.com",
-  "bugs": {
-    "url": "https://github.com/zourtney/angular-checklist/issues"
-  },
-  "peerDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
-  },
-  "description": "One-way and two-way bound checkbox list directive for Angular 2+",
-  "devDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/platform-server": "^4.0.0",
-    "@angular/router": "^4.0.0",
-    "@types/node": "^7.0.0",
-    "core-js": "^2.4.1",
-    "reflect-metadata": "^0.1.9",
-    "rimraf": "^2.6.1",
-    "rxjs": "^5.1.0",
-    "ts-loader": "^2.0.3",
-    "tslint": "^4.3.1",
-    "typescript": "^2.3.0",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
-    "zone.js": "^0.8.4"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "10ed027f19d2bd332a0f3003cffed1badc25d5ec",
-    "tarball": "https://registry.npmjs.org/angular-checklist/-/angular-checklist-1.0.0.tgz"
-  },
-  "gitHead": "d977ca4aa45911156a14fc579fd59df6565dbadf",
-  "homepage": "https://github.com/zourtney/angular-checklist#readme",
-  "keywords": [
-    "angular2",
-    "ng2",
-    "checklist",
-    "checkbox",
-    "checklist-model"
-  ],
-  "license": "MIT",
-  "maintainers": [
-    {
-      "name": "zourtney",
-      "email": "zourtney@gmail.com"
-    }
-  ],
   "name": "angular-checklist",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": "git+https://github.com/zourtney/angular-checklist.git",
+  "version": "1.4.0-dev",
   "scripts": {
-    "build": "ngc",
-    "clean": "rimraf ./dist ./src/**.js ./src/**.json",
-    "lint": "tslint ./**/*.ts",
-    "prepublish": "npm run clean && npm run lint && npm run build",
-    "start": "webpack-dev-server",
-    "test": "npm test"
+    "ng": "ng",
+    "start": "ng serve --project demo",
+    "build": "ng build angular-checklist --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
-  "types": "dist/index.d.ts",
-  "version": "1.3.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js"
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~9.1.1",
+    "@angular/common": "~9.1.1",
+    "@angular/compiler": "~9.1.1",
+    "@angular/core": "~9.1.1",
+    "@angular/forms": "~9.1.1",
+    "@angular/platform-browser": "~9.1.1",
+    "@angular/platform-browser-dynamic": "~9.1.1",
+    "@angular/router": "~9.1.1",
+    "rxjs": "~6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.1",
+    "@angular-devkit/build-ng-packagr": "~0.901.1",
+    "@angular/cli": "~9.1.1",
+    "@angular/compiler-cli": "~9.1.1",
+    "@angular/language-service": "~9.1.1",
+    "@types/node": "^12.11.1",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "^5.1.2",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.4.1",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-jasmine": "~3.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "ng-packagr": "^9.0.0",
+    "protractor": "~5.4.3",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.8.3"
+  }
 }

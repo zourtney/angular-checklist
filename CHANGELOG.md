@@ -68,3 +68,9 @@ Initial commit
 
 - Allow falsy input (Pull #5)
 - `maxSelectedItems` (Pull #6)
+
+
+1.4.0
+-----
+
+- Rebuild for Angular Ivy compatibility
