@@ -74,3 +74,9 @@ Initial commit
 -----
 
 - Rebuild for Angular Ivy compatibility
+
+1.5.0
+-----
+
+- Upgrade to Angular 11
+- Migration from TSLint + codelyzer to angular-eslint
