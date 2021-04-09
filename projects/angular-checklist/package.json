@@ -1,6 +1,6 @@
 {
   "name": "angular-checklist",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "dependencies": {
     "tslib": "^2.0.0"
   },
